@@ -39,7 +39,6 @@
     <!-- <li><a href="/project/{{project.id}}">Title: {{ project.title }} --- {{project.description }}</a></li> -->
     <!-- RECOMMENDED BY DJANGO -->
     <li><a href="{% url 'project' project.id %}">Title: {{ project.title }} --- {{project.description }}</a></li>
-    <!-- SYNTAX > {% url 'NAME_WE_PASSED_IN_URLS.PY_PATH' DYNAMIC_VALUE%} -->
     <!-- URLS.PY path('project/<str:pk>', views.project, name="project") -->
     <!-- ADVANTAGES > Even we change the path example > project to project-object 
         LINK wont work> we have to change manually
